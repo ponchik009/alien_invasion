@@ -1,0 +1,5 @@
+сохранять рекорд в файл
+рефакторинг:
+   _check_bullet_alien_collisions()
+   Scoreboard init
+   Scoreboard формирование счёта
