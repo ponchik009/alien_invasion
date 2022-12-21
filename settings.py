@@ -13,13 +13,13 @@ class Settings:
     self.ship_limit = 3
     
     # Параметры снаряда
-    self.bullet_width = 3000
+    self.bullet_width = 3
     self.bullet_height = 15
     self.bullet_color = (60, 60, 60)
     self.bullets_allowed = 300000
     
     # Настройки пришельцев
-    self.fleet_drop_speed = 50
+    self.fleet_drop_speed = 10
     
     # Темп ускорения игры
     self.speedup_scale = 1.1

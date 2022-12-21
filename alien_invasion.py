@@ -114,6 +114,7 @@ class AlienInvasion:
       self._fire_bullet()
     elif event.key == pygame.K_ESCAPE:
       # Выход из игры при нажатии ESC клавиши
+      self.stats.save_high_score()
       sys.exit()
     elif event.key == pygame.K_RETURN:
       self._start_game()
@@ -273,6 +274,8 @@ class AlienInvasion:
       sleep(0.5)
     else:
       self.stats.game_active = False
+      # Сохранение рекорда в файл
+      self.stats.save_high_score()
       # Указатель мыши снова виден
       pygame.mouse.set_visible(True)
             
